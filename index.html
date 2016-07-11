@@ -3,23 +3,53 @@
 <head>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<title> jaggar lee </title>
 </head>
 <body>
 <header class="container">
 		<div class="row">
-			<nav class="col-sm-4">
-				<h2 style="color: #FDF5E6;">jaggar lee</h2>
+			<nav class="col-sm-2">
+				<h2 style="color: black;">jaggar lee</h2>
 			</nav>
-			<nav class="col-sm-6">
-				<div class="links"><a href="#experience" style="color: #A9A9A9;">Experience</a></div>
-				<div class="links"><a href="#project" style="color: #A9A9A9;">Projects</a></div>
-				<div class="links"><a href="#contact" style="color: #A9A9A9;">Contact</a></div>
+			<nav class="col-sm-1">
+				<div class="dropdown">
+					<a href="#" style="text-decoration: none" onclick="myFunction()" class="dropbtn">&#9776</a>
+					<div id="myDropdown" class="dropdown-content">
+					    <a href="#experience" style="color: #A9A9A9;">Experience</a>
+					    <a href="#project" style="color: #A9A9A9;">Projects</a>
+					    <a href="#contact" style="color: #A9A9A9;">Contact</a>
+					</div>
+				</div>
 			</nav>
 		</div>
 </header>
+
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 <section class="jumbotron">
-	<h1 style="color: black;">Welcome</h1>
+	<h1 style="color: white;">Welcome</h1>
 	<p>This is blank...</p>
 </section>
 <section class="container">

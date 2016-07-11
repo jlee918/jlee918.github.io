@@ -1,16 +1,27 @@
 body {
      font-family: 'Roboto', sans-serif;
      font-weight: 300;
-     background-image: url('http://i.imgur.com/9dS2J1v.gif');
-     background-size: cover;
 }
 
 header {
      padding: 40px 0;
+     position: fixed;
+     margin-top: -120px;
 }
 
-header .row{
+header .row {
      display: block;
+}
+
+header .col-sm-2 {
+     padding: -20px;
+     margin-right: -30px;
+     margin-left: 50px;
+}
+
+header .col-sm-1 {
+     padding: -10px;
+     margin-top: 25px;
 }
 
 header .p {
@@ -18,6 +29,7 @@ header .p {
      margin: 1;
      color: blue;
 }
+
 
 header .links {
      text-align: left;
@@ -31,8 +43,11 @@ header .links {
 .jumbotron {
      text-align: center;
      height: 200px;
-     text-shadow: 0.25px 0.25px 0.25px #000000;
-     opacity: 0.2;
+     margin-top: 100px;
+     background-image: url('http://i.imgur.com/9dS2J1v.gif');
+     background-size: cover;
+     font-family: 'Verdana', sans-serif;
+     font-weight: 100;
 
 }
 
@@ -41,3 +56,45 @@ section .row {
      width: 100%;
      font-weight: 100;
 }
+
+.dropbtn {
+    padding: 1px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    color: black;
+
+}
+
+a:hover {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+
+.show {display:block;}
+
+
