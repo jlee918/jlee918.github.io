@@ -1,111 +1,75 @@
+
 <!DOCTYPE html>
-<html>
-<head>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<link rel="stylesheet" type="text/css" href="index.css">
-	<title> jaggar lee </title>
-</head>
-<body>
-<header class="container">
-		<div class="row">
-			<nav class="col-sm-2">
-				<h2 style="color: black;">jaggar lee</h2>
-			</nav>
-			<nav class="col-sm-1">
-				<div class="dropdown">
-					<a href="#" style="text-decoration: none" onclick="myFunction()" class="dropbtn">&#9776</a>
-					<div id="myDropdown" class="dropdown-content">
-					    <a href="#project" style="color: #A9A9A9;">Projects</a>
-					    <a href="#skills" style="color: #A9A9A9;">Skills</a>
-					    <a href="info.html" style="color: #A9A9A9;">Info</a>
-					</div>
-				</div>
-			</nav>
-		</div>
-</header>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
 
-<script>
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
+    <title>jaggar lee</title>
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+    <!-- Bootstrap core CSS -->
+    <link href="index.css" rel="stylesheet">
 
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
+    <!-- Custom styles for this template -->
+    <link href="contact.css" rel="stylesheet">
+  </head>
 
-<section class="jumbotron">
-	<h1 style="color: black;">Welcome</h1>
-</section>
+  <body>
 
-<section class="container">
-	<div class="row">
-    	<div class="col-sm-8">
-    		<a name="project">
-			<h4 style="color: #A9A9A9;"> Projects </h4>
-		</div>
-		<div class="row">
-			<div class="col-sm-12">
-				<p>Comic Book Web App (2016 Fall) ~ https://sloth310.herokuapp.com</p>
-				<div class="row">
-					<div class="col-sm-6 ">
-						<p>- web platform where users have personal accounts with login capability,
-							access to editing and uploading comic panels, viewing other users comics,
-							and storing drafted/published comics.</p>
-					</div>
-				</div>
-		</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12">
-				<p>Restaurant Quiz Android App (2014 Fall)</p>
-				<div class="row">
-					<div class="col-sm-6 ">
-						<p>- A game that utilizies Yelp and Google Maps to determine a player's score
-						which is dependent on his/her guess of the location of the restaurant</p>
-					</div>
-				</div>
-		</div>
-		</div>
-	</div>
-	<div class="row">
-    	<div class="col-sm-8">
-    		<a name="skills">
-			<h4 style="color: #A9A9A9;"> Technical Skills </h4>
-		</div>
-		<div class="row">
-			<div class="col-sm-12">
-				<p>Java, C, C++, JavaScript, HTML, CSS, Git, mongoDB</p>
-		</div>
-		</div>
-	</div>
-	<div class="row">
-    	<div class="col-sm-8">
-    		<a name="school">
-				<h4 style="color: #A9A9A9;"> School </h4>
-		</div>
-		<div class="row">
-			<div class="col-sm-12">
-				<p>University of British Columbia, Bachelor of Science with Major in Computer Science</p>
-		</div>
-		</div>
-	</div>
-</section>
+    <div class="site-wrapper">
 
-</body>
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">jaggarlee</h3>
+              <nav class="nav nav-masthead">
+                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link" href="#project">Projects</a>
+                <a class="nav-link" href="#contact">Contact</a>
+              </nav>
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <div class="inner cover">
+            <h1 class="cover-heading">About Me</h1>
+            <p class="lead">I am a fourth year student at University of British Columbia studying Computer Science. I have an interest in distributed systems, web applications design and databases. Outside of school, I'm a gamer, dog owner and food lover.  </p>
+          </div>
+          <div class="projects">
+            <a name="project">
+            <h1 class="cover-heading">Projects</h1>
+            <p class="lead"></p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
 </html>
